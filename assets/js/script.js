@@ -29,7 +29,7 @@ const mostrarPosts = (posts) => {
     const postHTML =
         '<ul>' +
         // Utiliza el método map para crear un elemento <li> para cada post
-        posts.map(post => `<li>${post.title}: </li><l>${post.body}</l>`).join('') +
+        posts.map(post => `<li><b>${post.title}:</b><p>${post.body}</p></li>`).join('') +
         '</ul>';
     
     // Inserta la cadena HTML en el elemento con el ID 'post-data' en el documento HTML
